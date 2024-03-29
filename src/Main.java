@@ -1,13 +1,13 @@
 import exceptions.InvalidUsernameException;
-import exceptions.InvalidPasswordException;
+import exceptions.IncorrectPasswordException;
 import exceptions.FailedAttemptExceededException;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String adminUsername = "admin";
-        String adminPassword = "1234";
+        String validUsername = "admin";
+        String validPassword = "password";
         int numberOfAttempts = 0;
         boolean isLoggedIn = false;
 
@@ -15,20 +15,19 @@ public class Main {
             try {
                 String formUsername = scanString("Enter username: ");
 
-                if (!formUsername.equals(adminUsername)) {
-                    numberOfAttempts += 1;
-                    throw new InvalidUsernameException("Username is not correct!");
+                if (!formUsername.equals(validUsername)) {
+                    throw new InvalidUsernameException("Username is invalid. Please try again!");
                 }
 
                 String formPassword = scanString("Enter Password: ");
 
-                if (!formPassword.equals(adminPassword)) {
+                if (!formPassword.equals(validPassword)) {
                     numberOfAttempts += 1;
-                    throw new InvalidPasswordException("Incorrect Password!");
+                    throw new IncorrectPasswordException("Incorrect Password!");
                 }
 
                 isLoggedIn = true;
-            } catch (InvalidUsernameException | InvalidPasswordException e) {
+            } catch (InvalidUsernameException | IncorrectPasswordException e) {
                 System.out.println(e.getMessage());
             }
 
@@ -37,7 +36,7 @@ public class Main {
                     throw new FailedAttemptExceededException("Multiple attempts failed!, try again later!");
                 }
             } catch (FailedAttemptExceededException e) {
-                System.out.print(e.getMessage());
+                System.out.print("\n" + e.getMessage());
                 System.exit(0);
             } finally {
                 System.out.print("\n");
