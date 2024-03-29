@@ -21,7 +21,7 @@ Make "password" as the valid password.</div>
 
 ![Multiple Attempts Failed](https://media.discordapp.net/attachments/1024219092611239936/1223241436816871434/faileAttempts.gif?ex=6619235d&is=6606ae5d&hm=d37e3cf96c497aeac009f864e76a2b6ca169ae576c1a2f8b2df160864105350b&=&width=314&height=269)
 
-**<code style="color : green">Success:</code>**
+**Success:**
 
 ![Alt text](https://media.discordapp.net/attachments/1024219092611239936/1223241437714448384/success.gif?ex=6619235d&is=6606ae5d&hm=d5324dca38874ebe0e75a696b06adc19e0d40c346d545374c1283bd289f2b421&=&width=314&height=179)
 
