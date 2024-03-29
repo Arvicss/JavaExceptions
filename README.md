@@ -9,15 +9,16 @@ Make "password" as the valid password.</div>
 
 # Output
 
-**Invalid Username: <code style="color : red">throws InvalidUsernameException</code>**
+**Invalid Username:** throws [InvalidUsernameException](https://github.com/Arvicss/JavaExceptions/blob/main/src/exceptions/InvalidUsernameException.java)
 
 ![Invalid Username](https://media.discordapp.net/attachments/1024219092611239936/1223241438070968381/username.gif?ex=6619235d&is=6606ae5d&hm=503560441c2ed96d23c54d71c83c2542e641d3a4febb46b1a9b78995b722bcd2&=&width=314&height=179)
 
-**Incorrect Password: <code style="color : red">throws IncorrectPasswordException</code>**
+**Incorrect Password:** throws [IncorrectPasswordException](https://github.com/Arvicss/JavaExceptions/blob/main/src/exceptions/IncorrectPasswordException.java)
+
 
 ![Invalid Password](https://media.discordapp.net/attachments/1024219092611239936/1223241437269725265/password.gif?ex=6619235d&is=6606ae5d&hm=bd906a2c55acbbc4127a78556397a675d5e2215b8fa212ea5c420c1fdaea2cb1&=&width=314&height=179)
 
-**Multiple Attempts Failed: <code style="color : red">throws MultipleAttemptsFailedException</code>**
+**Multiple Attempts Failed:** throws [FailedAttemptExceededException](https://github.com/Arvicss/JavaExceptions/blob/main/src/exceptions/FailedAttemptExceededException.java)
 
 ![Multiple Attempts Failed](https://media.discordapp.net/attachments/1024219092611239936/1223241436816871434/faileAttempts.gif?ex=6619235d&is=6606ae5d&hm=d37e3cf96c497aeac009f864e76a2b6ca169ae576c1a2f8b2df160864105350b&=&width=314&height=269)
 
